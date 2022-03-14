@@ -47,9 +47,9 @@
                 </div>
               </div>
             <?php else: ?>
-              <a href="./login.php" class="mx-2 text-light text-decoration-none font-weight-bolder">Client Login</a> | 
-              <a href="./vendor" class="mx-2 text-light text-decoration-none font-weight-bolder">Vendor Login</a> | 
-              <a href="./admin" class="mx-2 text-light text-decoration-none font-weight-bolder">Admin Login</a>
+              <a href="./login.php" class="mx-2 text-light text-decoration-none font-weight-bolder">User</a> | 
+              <a href="./vendor" class="mx-2 text-light text-decoration-none font-weight-bolder">Vendor</a> | 
+              <a href="./admin" class="mx-2 text-light text-decoration-none font-weight-bolder">Admin</a>
             <?php endif; ?>
           </div>
         </div>
