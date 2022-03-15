@@ -87,6 +87,12 @@
                         </div>
                         <div class="row">
                             <div class="form-group col-md-6">
+                                <label for="fee" class="control-label">Shipping Fee</label>
+                                <input type="text" id="fee" name="fee" class="form-control form-control-sm form-control-border" value="50" disabled>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
                                 <label for="password" class="control-label">Password</label>
                                 <div class="input-group input-group-sm">
                                     <input type="password" id="password" name="password" class="form-control form-control-sm form-control-border" required>
