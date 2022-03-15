@@ -75,12 +75,25 @@ if(isset($_GET['id']) && $_GET['id'] >0){
                         </div>
                         <div class="row align-items-end">
                             <div class="col-md-3 form-group">
-                                <input type="number" min = "1" id= 'qty' value="1" class="form-control rounded-0 text-center">
+                                <?php 
+                                    if(isset($_POST['number'])){
+                                    //echo "<input type='number' min = '1' id= 'qty' value='1' class='form-control rounded-0 text-center'>";
+                                    echo '<script>alert("less than")</script>';
+                                }
+                                ?><?php 
+                                    if ($v <= 0){
+                                        echo "<input type='number' min = '1' id= 'qty' value='1' class='form-control rounded-0 text-center' disabled>";
+                                    }
+                                    else{
+                                        echo "<input type='number' min = '1' id= 'qty' value='1' class='form-control rounded-0 text-center'>";
+                                    }
+                                ?>
                             </div>
                             <div class="col-md-3 form-group">
-                            <?php  if($v == 0)
+                            <?php  if($v <= 0)
                             { echo"<button class='btn btn-secondary disabled btn-flat' type='button'><i class='fa fa-cart-plus'></i> Add to Cart</button>";}
                                 else {
+                                    
                                     echo "<button class='btn btn-primary btn-flat' type='button' id ='add_to_cart'><i class='fa fa-cart-plus'></i> Add to Cart</button>";
                                 }
                             ?>
