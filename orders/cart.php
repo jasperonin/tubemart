@@ -79,10 +79,13 @@
             </div>
         </div>
     </div>
+
     <div class="clear-fix mb-2"></div>
     <div class="text-right">
-        <a href="./?page=orders/checkout" class="btn btn-flat btn-primary btn-sm"><i class="fa fa-money-bill-wave"></i> Checkout</a>
+    <a href="http://localhost/tubemart/orders/payment.php" class="btn btn-flat btn-primary btn-sm"><i class="fa fa-money-bill-wave"></i> Payment</a>
+        <a href="./?page=orders/checkout" class="btn btn-flat btn-primary btn-sm"><i class="fa fa-shopping-cart"></i> Checkout</a>
     </div>
+   
 </div>
 <script>
     $(function(){
